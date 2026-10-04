@@ -55,8 +55,9 @@ def buildTree(bombka, indexes: list[dict[str, int]]) -> list[list[str]]:
     @printBombka(bombka, indexes)
     def draw() -> list[list[str]]:
         tempTree: list[list[str]] = []
-        tempTree.extend(triangel(1, 4, 4))
-        tempTree.extend(triangel(3, 5, 2))
+        tempTree.extend(triangel(start=1, end=4, space=4))
+        tempTree.extend(triangel(start=3, end=5, space=2))
+        tempTree.append([' '*3, '###'])
         return tempTree
 
     return draw()

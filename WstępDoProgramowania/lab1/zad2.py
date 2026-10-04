@@ -7,9 +7,12 @@ def triangel(start: int, end: int, space: int):
     else:
         return
 
-triangel(1, 4, 4)
-triangel(3, 5, 2)
+def buildTree():
+    triangel(1, 4, 4)
+    triangel(3, 5, 2)
+    print(' '*2, '###')
 
+buildTree()
 
 # print("""
 #      ^
